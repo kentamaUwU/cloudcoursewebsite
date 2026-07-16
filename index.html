@@ -1,10 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cloud Infrastructure and Architecture Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    padding:50px;
+    border-radius:20px;
+    width:min(90%,700px);
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+p{
+    color:#d1d5db;
+    line-height:1.7;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.primary{
+    background:#3b82f6;
+    color:white;
+}
+
+.primary:hover{
+    transform:translateY(-4px);
+    background:#2563eb;
+}
+
+.secondary{
+    background:white;
+    color:#111827;
+}
+
+.secondary:hover{
+    transform:translateY(-4px);
+}
+
+footer{
+    margin-top:40px;
+    color:#cbd5e1;
+    font-size:14px;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Hello! I am Divyansh.</h1>
-    <p>This is my first website for this course.</p>
+
+<div class="container">
+
+<h1>Hello, I'm <span class="highlight">Divyansh</span> 👋</h1>
+
+<p>
+Welcome to my first website hosted with GitHub Pages.
+I'm a Computer Science student exploring AI, machine learning,
+cloud computing, and software engineering.
+</p>
+
+<div class="buttons">
+<button class="primary" onclick="showMessage()">Say Hi</button>
+<button class="secondary" onclick="window.open('https://github.com/kentamaUwU')">
+GitHub
+</button>
+</div>
+
+<footer>
+Made with ❤️ using HTML, CSS & JavaScript
+</footer>
+
+</div>
+
+<script>
+function showMessage(){
+    alert("Thanks for visiting my website! 🚀");
+}
+</script>
+
 </body>
 </html>
